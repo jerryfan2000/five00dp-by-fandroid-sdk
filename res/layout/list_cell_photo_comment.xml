@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp" >
+
+    <com.nyuen.five00dp.view.FocusableImageView
+        android:id="@+id/commentUserPhotoView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_userpic" />
+
+    <TextView
+        android:id="@+id/commentUserNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/commentUserPhotoView"
+        android:drawablePadding="8dp"
+        android:gravity="top"
+        android:textColor="#3589A7"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/commentBodyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/commentUserNameView"
+        android:layout_below="@+id/commentUserNameView"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/likeCountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/commentBodyView"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/ic_heart"
+        android:drawablePadding="2dp"
+        android:gravity="center_vertical"
+        android:text="10"
+        android:textColor="#979797"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/commentUserPhotoView"
+        android:layout_alignLeft="@+id/commentUserPhotoView"
+        android:src="@drawable/ic_awesome"
+        android:visibility="gone" />
+
+</RelativeLayout>

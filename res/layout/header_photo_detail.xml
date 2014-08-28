@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <com.nyuen.five00dp.view.StretchImageView
+        android:id="@+id/headerPhotoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF3A3A3A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.nyuen.five00dp.view.FocusableImageView
+                android:id="@+id/headerUserPhotoView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_userpic" />
+
+            <ImageView
+                android:id="@+id/imageViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/headerUserPhotoView"
+                android:layout_alignLeft="@+id/headerUserPhotoView"
+                android:src="@drawable/ic_awesome"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/headerUserNameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/headerDateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Testing"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ratingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:drawableBottom="@drawable/pulse"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" 
+        android:paddingBottom="4dp">
+
+        <com.nyuen.five00dp.view.FadeInTextSwitcher
+            android:id="@+id/viewsCountView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@android:id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:drawableLeft="@drawable/ic_view"
+                android:drawablePadding="4dp"
+                android:textColor="#9C9A9B"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </com.nyuen.five00dp.view.FadeInTextSwitcher>
+
+        <com.nyuen.five00dp.view.FadeInTextSwitcher
+            android:id="@+id/votesCountView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@android:id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:drawableLeft="@drawable/ic_vote"
+                android:drawablePadding="4dp"
+                android:textColor="#9C9A9B"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </com.nyuen.five00dp.view.FadeInTextSwitcher>
+
+        <com.nyuen.five00dp.view.FadeInTextSwitcher
+            android:id="@+id/favsCountView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@android:id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:drawableLeft="@drawable/ic_fav"
+                android:drawablePadding="4dp"
+                android:textColor="#9C9A9B"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </com.nyuen.five00dp.view.FadeInTextSwitcher>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/headerDescriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="#333"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:background="@drawable/bg_panel_divider" />
+
+</LinearLayout>
